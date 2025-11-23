@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> </title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+        <script src = "scripts/script.js"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class = "main">
+            <div class= "clockTheme">
+                                            
+    
+            </div>
+         <div class = "seconds"></div>
+          
+                    <div class = "minutes">
+            <div class = "min min_5">05</div>
+            <div class = "min min_10">10</div>
+            <div class = "min min_15">15</div>
+            <div class = "min min_20">20</div>
+            <div class = "min min_25">25</div>
+            <div class = "min min_30">30</div>
+            <div class = "min min_35">35</div>
+            <div class = "min min_40">40</div>
+            <div class = "min min_45">45</div>
+            <div class = "min min_50">50</div>
+            <div class = "min min_55">55</div>
+            <div class = "min min_00">00</div>
+                    </div>
+                   <div class = "hours">hrs</div>
+                   <div class = "minRing"></div>
+                       <div class = "minRing1"></div>
+                           <div class = "minRing2"></div>
+                               <div class = "pointer"></div>
+        <div class = "secLog">
+            <div class = "secRot">
+            <div class = "sec secDig">1</div>
+            <div class = "sec secDig">2</div>
+            <div class = "sec secDig">3</div>
+             <div class = "sec secDig">4</div>
+             <div class = "sec secDig">5</div>
+             <div class = "sec secDig">6</div>
+             <div class = "sec secDig">7</div>
+             <div class = "sec secDig">8</div>
+             <div class = "sec secDig">9</div>
+             <div class = "sec secDig">10</div>
+                  <div class = "sec secDig">11</div>
+            <div class = "sec secDig">12</div>
+            <div class = "sec secDig">13</div>
+             <div class = "sec secDig">14</div>
+             <div class = "sec secDig">15</div>
+             <div class = "sec secDig">16</div>
+             <div class = "sec secDig">17</div>
+             <div class = "sec secDig">18</div>
+             <div class = "sec secDig">19</div>
+             <div class = "sec secDig">20</div>
+             <div class = "sec secDig">21</div>
+                  <div class = "sec secDig">22</div>
+            <div class = "sec secDig">23</div>
+             <div class = "sec secDig">24</div>
+             <div class = "sec secDig">25</div>
+             <div class = "sec secDig">26</div>
+             <div class = "sec secDig">27</div>
+             <div class = "sec secDig">28</div>
+             <div class = "sec secDig">29</div>
+             <div class = "sec secDig">30</div>
+              <div class = "sec secDig">31</div>
+                  <div class = "sec secDig">32</div>
+            <div class = "sec secDig">33</div>
+             <div class = "sec secDig">34</div>
+             <div class = "sec secDig">35</div>
+             <div class = "sec secDig">36</div>
+             <div class = "sec secDig">37</div>
+             <div class = "sec secDig">38</div>
+             <div class = "sec secDig">39</div>
+             <div class = "sec secDig">40</div>
+                  <div class = "sec secDig">41</div>
+            <div class = "sec secDig">42</div>
+            <div class = "sec secDig">43</div>
+             <div class = "sec secDig">44</div>
+             <div class = "sec secDig">45</div>
+             <div class = "sec secDig">46</div>
+             <div class = "sec secDig">47</div>
+             <div class = "sec secDig">48</div>
+             <div class = "sec secDig">49</div>
+             <div class = "sec secDig">50</div>
+                     <div class = "sec secDig">51</div>
+            <div class = "sec secDig">52</div>
+            <div class = "sec secDig">53</div>
+             <div class = "sec secDig">54</div>
+             <div class = "sec secDig">55</div>
+             <div class = "sec secDig">56</div>
+             <div class = "sec secDig">57</div>
+             <div class = "sec secDig">58</div>
+             <div class = "sec secDig">59</div>
+             <div class = "sec secDig">00</div>
+                 </div>
+        </div>
+                     <div class = "logo">LOVELACE</div>
+        </div>
+        <script>
+       
+           setInterval(
+            function degRotat(){ 
+            
+             let nD = new Date();
+              let minute = nD.getMinutes()*6;
+            let secs = nD.getSeconds();
+            let hours = nD.getHours();
+            let rota = (minute / 60)* -60;
+            let mins = (minute / 60)*60;
+            
+            if(hours <= 9){ 
+hours = "0"+ (hours);
+ }; 
+
+                        document.querySelector(".hours").innerText = (hours);                 
+            
+ document.querySelector(".min").style.transform = "rotateZ(" + mins + "deg)";
+ document.querySelector(".min_10").style.transform = "rotateZ(" + mins + "deg)";
+             document.querySelector(".min_15").style.transform = "rotateZ(" + mins + "deg)";
+               document.querySelector(".min_20").style.transform = "rotateZ(" + mins + "deg)";
+           document.querySelector(".min_25").style.transform = "rotateZ(" + mins + "deg)";
+           document.querySelector(".min_30").style.transform = "rotateZ(" + mins + "deg)";
+           document.querySelector(".min_35").style.transform = "rotateZ(" + mins + "deg)";
+           document.querySelector(".min_40").style.transform = "rotateZ(" + mins + "deg)";
+           document.querySelector(".min_45").style.transform = "rotateZ(" + mins + "deg)";
+           document.querySelector(".min_50").style.transform = "rotateZ(" + mins + "deg)";
+           document.querySelector(".min_55").style.transform = "rotateZ(" + mins + "deg)";
+           document.querySelector(".min_00").style.transform = "rotateZ(" + mins + "deg)";
+ document.querySelector(".secRot").style.transform = "translateY(" + secs + "px)";
+ document.querySelector(".minutes").style.transform = "rotateZ(" + rota + "deg)";
+            
+          document.querySelector(".min_30").style.transform = "scale(" + mins + "px)";
+             },1000);
+             
+             
+        </script>
+    </body>
+ </html>

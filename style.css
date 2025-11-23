@@ -1,0 +1,287 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: grey;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 340px;
+}
+.main{
+    display:flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    height: 335px;
+    background-color: blue;
+    margin-left:15px;
+    margin-top:5px;
+    
+}
+.clockTheme{
+    position:absolute;
+    align-items: center;
+    width: 330px;
+    height: 330px;
+    background-color: purple;
+    
+}
+.seconds{
+    width: 326px;
+    height: 326px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+   
+}
+.minutes{
+    width: 250px;
+    height: 250px;
+    background-color: teal;
+    border-style: solid;
+    border-color: white;
+    position: absolute;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    overflow: hiddn;
+    z-index:;
+}
+.hours{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 50px;
+    font-size: 72px;
+    width: 120px;
+    height: 100px;
+    background-colr: #85536370;
+    position: absolute;
+    border-radius: 50%;
+    color:white;
+    font-family:serif, Times New Roman ;
+   z-index:;
+}
+ .hours::after {
+     
+    content:"hours";
+    font-size:14px;
+    color:purple;
+    position:absolute;
+    bottom:22px;
+    right:-14px;
+}
+.minRing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 220px;
+    height: 76px;
+    background-coor: #FF00778E;
+    position: absolute;
+    z-index:;
+    right:0px;
+    align-self:flex-ed;
+    border-style:solid;
+    border-right-style:none;
+    border-color:blue;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+}
+
+.minRing1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 216px;
+    height: 70px;
+    background-coor: #FF00778E;
+    position: absolute;
+    right:0px;
+    border-style:solid;
+    border-right-style:none;
+    border-color:black;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    }
+    
+.minRing2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 212px;
+    height: 64px;
+    background-coor: #FF00778E;
+    position: absolute;
+    z-index:;
+    right:0px;
+    align-self:flex-ed;
+    border-style:solid;
+    border-right-style:none;
+    border-color:white;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    }
+.logo{
+    position:absolute;
+    font-family:serif, Times New Roman ;
+    font-size:18px;
+    bottom:90px;
+}
+digits{
+    display:flex;
+    position:absolute;
+    justify-content:center;
+    align-items:cente;
+    border-style:solid;
+    border-color:white;
+    width: 245px;
+    height:245px;
+    border-radius: 50%;
+    flex-direction: column;
+}
+.min{
+    font-size:p;
+    position: absolute;
+}
+.min_50{
+    position: absolute;
+    margin:0px;
+    top:15px;
+    right:58px;
+}
+
+.min_55{
+    position: absolute;
+    top:60px;
+    right:12px;
+}
+
+.min_00{
+    position:absolute;
+    top:115px;
+    right:0px;
+}
+
+.min_5{
+    position: absolute;
+    margin:0px;
+    bottom:58px;
+    right:15px;
+}
+
+.min_10{
+    position: absolute;
+    margin:0px;
+    bottom:15px;
+    right:58px;
+}
+
+.min_15{
+    position:absolute;
+    bottom:0px;
+    right:115px;
+    transform: rotateZ(0deg);
+}
+
+.min_20{
+    position: absolute;
+    bottom:15px;
+    left:58px;
+}
+
+.min_25{
+    position: absolute;
+    bottom:58px;
+    left:15px;
+}
+
+.min_30{
+    position: absolute;
+    margin:0px;
+    bottom:115px;
+}
+
+.min_35{
+    position: absolute;
+    margin:0px;
+    top:62px;
+    left:16px;
+}
+
+.min_40{
+    position: absolute;
+    margin:0px;
+    top:15px;
+    left:58px;
+}
+
+.min_45{
+    position: absolute;
+    right:120px;
+    top: 0px;
+}
+.secLog{
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    color:white;
+    width: 28px;
+    height: 26px;
+    background-coor: #FF00778E;
+    right:10px;
+    border-style:solid;
+    border-right-style:none;
+    border-color:black;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    overflow:hidden;
+    overflow-x: scrll;
+    
+    
+}
+.sec{
+    padding:x;
+}
+@keyframes Secs {
+    from{transform:translateY(0);}
+    
+    to{transform:translateY(-100%);}
+}
+.secRot{
+    display:flex;
+border-style:sold;    
+position:absolute;
+font-size:18px;
+justify-content:flex-start;
+text-align: center;
+flex-direction:column;
+animation: 60s Secs infinite linear;
+}
+.pointer{
+      display: flex;
+    align-items: flex-start;
+    position: absolute;
+    color:transparent;
+    width:;
+    height:;
+    background-coor: #FF00778E;
+    right:50px;
+    border-style:solid;
+    border-left-style:solid;
+    border-left-color: blue;
+    border-width:10px;
+    
+}
